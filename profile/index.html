@@ -1,0 +1,386 @@
+<!-- PROFESSORA PAMELLA -->
+
+<!-- Declaração de que o documento é em HTML, marcando
+o início do código -->
+<!DOCTYPE html>
+
+<!-- Tag html lang: especifica o idioma da página-->
+<html lang="pt-BR">
+
+
+<!-- Tag head: não é visualizado no corpo (body) da página,
+armazena os metadados -->
+
+<head>
+
+    <!-- Metadado UTF-8: considera um conjunto de caracteres presente no idioma
+    Português (acentuação, por exemplo)-->
+    <meta charset="UTF-8">
+
+
+    <!-- Metadado que possibilita a visualização em navegador de dispositivo móvel,
+    mantendo a escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia o arquivo CSS, colocar na tag head -->
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Tag title: título da guia -->
+    <title>Soluções em TI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<!-- Tag body: Definir o corpo do documento (conteúdo a ser visualizado) -->
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap");
+    </style>
+
+
+   
+
+        <!-- Tag nav: Cria um seção de menu (navigation) -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navColor" id="navbarNav">
+                <ul class="navbar-nav" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobremim">Sobre mim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Soluções em TI</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contatos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- <nav>
+            tag ul: cria uma lista desordenada, enquanto a tag
+            ol cria uma lista ordenada =
+            <ul id="menu">
+
+                Tag li: determina cada item 
+
+                Tag a: possibilita que o texto seja clicável 
+                href: determina o redirecionamento da página 
+                <li><a href="#"> Início </a></li>
+                <li><a href="#sobremim"> Sobre mim </a></li>
+                <li><a href="#servicos"> Nossos Serviços </a></li>
+                <li><a href="#contato"> Contato </a></li>
+
+            </ul> 
+
+        </nav> -->
+        
+        <!--fim do menu-->
+        
+        <!-- Cabeçalho da página -->
+        <header>
+        <!--inicio da seção de apresentação-->
+        <div class="apresentacao">
+
+            <div class="left">
+                <img src="img/code.png" width="80%" height="330px" alt="imagem com notebook">
+            </div>
+
+            <div class="right">
+                <span>Insano_s</span>
+                <h1>Desenvolvedor web</h1>
+                <div>
+                    <button class="btn btnContact"><a href="#contato">Entre em contato</a></button>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Fim da seção de apresentação-->
+    </header>
+
+    <section id="sobremim">
+        
+        <h3>Sobre mim</h3>
+        <div class="containerSobreMim">
+
+            <div class="left">
+                <h2>insano_s inc</h2>
+                <p>Pitbullzado Loratcho Bradock
+                    Sempre trajado, no bolso malote
+                    <br>
+                    Consequentemente vai rolar um pente certo
+                    <br>
+                    Tudo indica, essa noite vai ser foda
+                    <br>
+                    Coisinhas daquelas mais pra frente, pique o brilho da corrente
+                    <br>
+                    Pega a visão quando ela olha
+                    <br>
+                    Vamo, vamo, vamo, vamo, vamo, vamo
+                    Vamo, vamo, vamo, vamo, vamo, vamo
+                    <br>
+                    Chama ela pra foder
+                    Vamo, vamo, vamo, vamo, vamo, vamo
+                    Vamo, vamo, vamo, vamo, vamo, vamo
+                    <br>
+                    Chama ela pra foder</p>
+            </div>
+
+            <div class="right">
+                <!--
+                <video controls autoplay width="540" height="315">
+                    <source src="img/video.mp4" type="video/mp4">
+                </video> -->
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="//api.whatsapp.com/send?phone=5511966900437&text=Acessa%C3%AD,%20acessa%C3%AD%20=)" target="_blank">
+                        <img src="img/redeSociais/whatsapp.png">
+                    </div>
+                
+                    <div>
+                        <p>(11)96690-0437</p>
+                    </div>
+
+                        </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://github.com/luizDiSouz1" target="_blank">
+                        <img src="img/redeSociais/github.png">
+                    </div>
+                
+                    <div>
+                        <p>github.com/luizDiSouz1</p>
+                    </div>
+                        </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="linkedin.com/in/luis-di-souza/">
+                        <img src="img/redeSociais/linkedin.png">
+                    </div>
+
+                    <div>
+                        <p>linkedin.com/in/luis-di-souza/</p>
+                    </div>
+                        </a>
+                </div> 
+
+            <div class="socialMedia">
+
+                <div>
+                    <a href="mailto:luiz_g.souza@yahoo.com.br">
+                    <img src="img/redeSociais/email.png">
+                </div>
+                
+                <div>
+                    <p>luiz_g.souza@yahoo.com.br</p>
+                </div>
+                    </a>
+            </div> 
+        </div>
+    </section>
+
+
+
+    <section id="servicos">
+
+        <!--Inicio da seção servicos-->
+        <h3> Nossos serviços</h3>
+        
+        <div class="containerServicos">
+
+            <div class="itemServico1">
+                <img src="img/montagemPc/96px.png" width="50%">
+
+                <h2> Montagem e manutenção de micro</h2>
+            </div>
+
+
+            <div class="itemServico2">
+                <img src="img/redes/96px.png" width="50%">
+                <h2> Implementação e configuração de redes </h2>
+            </div>
+
+            <div class="itemServico3">
+                <img src="img/configuracaoSO/96px.png" width="50%">
+                <h2>Instalação e configuração de sistemas operacionais</h2>
+
+            </div>
+            <div class="itemServico4">
+                <img src="img/hospedagemDominio/96px.png" width="50%">
+                <h2> Desenvolvimento e hospedagem de sites</h2>
+            </div>
+
+            <!-- Fim da seção servicos-->
+        </div>
+
+    </section>
+
+   
+    <!-- Tag hr: cria uma linha -->
+    <!-- <hr> -->
+
+   <!--  <div>
+        <h2> Sobre mim</h2> -->
+
+        <!-- Tag p: Representar o parágrafo 
+        <p>Olá, mundo!</p> -->
+
+        <!-- Tag footer: seção para identificar o rodapé 
+    </div> -->
+
+  
+    <!-- Início da seção contato -->
+    <section id="contato">
+
+        <div class="containerContato">
+
+            <form name="formularioContato">
+                <h2>Entre em contato</h2>
+
+                <div class="displayContato">
+
+                    <div class="dados">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+                        <br>
+
+                        <label for="celular">Celular: </label>
+                        <input type="tel" id="idFone" placeholder="(99) 99999-9999" name="celular" />
+                        <br>
+
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="idEmail" placeholder="seuemail@mail.com" name="email" />
+                    </div>
+
+                    <div class="mensagem">
+                        <label>Deixe sua mensagem: </label>
+                        <textarea rows="5" cols="60"></textarea>
+                        <br>
+
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="Enviar mensagem" />
+                    </div>
+
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.177822945603!2d-46.7020657246666!3d-23.6695979787256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5036539648d5%3A0x78501a72680ea23a!2sCentro%20Universit%C3%A1rio%20Senac%20-%20Santo%20Amaro!5e0!3m2!1spt-BR!2sbr!4v1695048273413!5m2!1spt-BR!2sbr" 
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        
+                        </iframe>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <!-- Fim da seção contato 
+     <footer class="text-center text-lg-start text-white" style="background: linear-gradient(
+        90deg,
+        rgba(117, 41, 165, 1) 0%,
+        rgba(8, 0, 43, 1) 76%
+      );">
+        Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Luiz Sousa
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora unde maiores optio
+                            accusamus accusantium consequatur id facere culpa delectus voluptas. At et eius deleniti
+                            repudiandae a reprehenderit labore ex accusamus!
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                        <p><i class="fas fa-home mr-3"></i> São Paulo, SP - Brasil</p>
+                        <p><i class="fas fa-envelope mr-3"></i> luiz_g.souza@yahoo.com.br</p>
+                        <p><i class="fas fa-phone mr-3"></i> +55 11 96455-6220</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Redes Sociais</h6>
+
+                        <!-- Google -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39"
+                            href="mailto:luiz_g.souza@yahoo.com.br" role=" button"><i
+                                class="fa-regular fa-envelope"></i></a>
+
+
+                        <!-- Linkedin -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://www.linkedin.com/in/pamellapereto/
+                            /" target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Github -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333"
+                            href="https://github.com/pamellapereto" target="_blank" role="button"><i
+                                class="fab fa-github"></i></a>
+
+                        <!-- Whatsapp -->
+                        <a class="btn btn-primary btn-floating m-1" style="background-color: #1eff00"
+                            href="https://api.whatsapp.com/send?phone=5511964556220" target="_blank" role="button"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright: Pamella Pereto
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Fim do rodapé -->    
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+</body>
+
+</html>

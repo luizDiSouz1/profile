@@ -1,0 +1,543 @@
+
+
+/*
+margin corresponde ao espaçamento externo da caixa em que o elemento está até os
+cantos da página
+
+padding corresponde ao espaçamento interno do elemento em relação à sua própria caixa
+
+background corresponde ao fundo, no qual é possível colocar uma cor sólida única
+ou em gradiente
+
+box-sizing: content-box não é uma boa prática, pois
+ao aumentarmos uma imagem, por exemplo, ou qualquer outro 
+elemento, o que ocorre é que a CAIXA DE CONTEÚDO (em que
+o elemento está) aumenta e não ele em si, causando possíveis
+distorções. O ideal é utilizar box-sizing: border-box
+
+Utilizar o site: https://cssgradient.io/
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* #menu {
+    display: flex;
+    list-style: none;
+    /*padding: 25px;
+    justify-content: center;
+     margin-bottom: 25px; 
+  } 
+  */
+
+  #menu a {
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    flex-direction: row;
+    margin: 19px;
+    text-transform: uppercase;
+  }
+  
+  #menu a:hover {
+    color: rgb(188, 90, 198);
+  }
+  
+  header {
+    background: linear-gradient(
+      90deg,
+      rgba(117, 41, 165, 1) 0%,
+      rgba(8, 0, 43, 1) 76%
+    );
+    padding-bottom: 60px;
+  }
+  
+  .apresentacao {
+    display: flex;
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 180%;
+  }
+  
+  span {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .right {
+    flex: 5;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .left {
+    flex: 5;
+    text-align: center;
+  }
+  
+  .btn {
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  
+  .btnContact {
+    background: rgb(188, 90, 198);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
+  .btnContact:hover {
+    background: rgb(68, 21, 185);
+    color: rgb(255, 255, 255);
+  }
+
+.right a{
+    text-decoration: none;
+    color: white;
+}
+  .containerServicos {
+    background: rgb(238, 230, 255);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    margin-top:-8px;
+  }
+  
+  .itemServico1,
+  .itemServico3,
+  .itemServico6,
+  .itemServico8 {
+    border: 1px solid rgb(115, 10, 134);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 25px 10px;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .itemServico2,
+  .itemServico4,
+  .itemServico5,
+  .itemServico7 {
+    border: 1px solid rgb(70, 100, 190);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 25px 10px;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .containerServicos h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .containerServicos img {
+    width: 60px;
+  }
+  
+  .itemServico1:hover,
+  .itemServico3:hover,
+  .itemServico6:hover,
+  .itemServico8:hover {
+    background: rgb(252, 234, 255);
+    cursor: pointer;
+  }
+  
+  .itemServico2:hover,
+  .itemServico4:hover,
+  .itemServico5:hover,
+  .itemServico7:hover {
+    background: rgb(226, 233, 255);
+    cursor: pointer;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h3 {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    background: rgb(238, 230, 255);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  .containerSobreMim {
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .containerSobreMim .left {
+    background: rgb(255, 255, 255);
+    margin-right: 190px;
+    margin-left: 120px;
+    flex: 7;
+    /*margin-top: auto;
+    margin-bottom: auto;*/
+    text-align: left;
+    line-height: 30px;
+    height: 270px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+
+  }
+  
+  .containerSobreMim .right {
+    background: rgb(255, 255, 255);
+    flex: 3;
+    margin-right: 100px;
+    /*margin-top: -1px;*/
+     /*margin-top: auto;
+    margin-bottom: auto;*/
+    height: 270px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size:20px;
+    
+  }
+  
+  #sobremim h3 {
+    background: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .socialMedia {
+    display: flex;
+    align-items: baseline;
+
+  }
+  
+  .socialMedia img {
+    width: 30px;
+  }
+  
+  .socialMedia p {
+    margin-left: 5px;
+    /*font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;*/
+    color: black;
+  }
+  
+  .socialMedia p:hover {
+    color: rgb(68, 21, 185);
+  }
+  
+  .socialMedia a {
+    text-decoration: none;
+  }
+  
+  .containerSobreMim h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #contato {
+    background: rgb(230, 200, 234);
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .containerContato h2 {
+    font-size: 22px;
+  }
+  
+  
+  form {
+    font-size: 16px;
+    max-width: 90%;
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+  
+  input,
+  textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    /*margin-left: 20px;*/
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+  }
+  
+  .displayContato {
+    display: flex;
+  }
+
+form h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mensagem{
+   margin-left: 60px; 
+   
+}
+
+textarea{
+    resize: none;
+    width: 350px;
+    height: 100px;
+}
+
+.mensagem input{
+    width: 150px;
+    cursor: pointer;
+    background: rgb(188, 90, 198);
+    color: rgb(255, 255, 255);
+}
+
+.mensagem input:hover {
+    background: rgb(68, 21, 185);
+    color: rgb(255, 255, 255);
+}
+
+.mapa{
+    flex: 5;
+    margin-left: 200px;
+    margin-top: -19px;
+    border-radius: 25px;
+}
+
+form{
+    margin-left: 10px;
+}
+
+iframe{
+  border-radius: 5px;
+  margin-top: -30px;
+}
+
+.navColor {
+  background: linear-gradient(
+    90deg,
+    rgba(117, 41, 165, 1) 0%,
+    rgba(8, 0, 43, 1) 76%
+  );
+  justify-content: center;
+  /*margin-right: -25px;
+  margin-left: -25px;
+  margin-bottom: ;*/
+}
+
+.container-fluid{
+  background: linear-gradient(
+    90deg,
+    rgba(117, 41, 165, 1) 0%,
+    rgba(8, 0, 43, 1) 76%
+  );
+  margin-top: -8px;
+  margin-bottom: -8px; 
+}
+
+.navbar-toggler {
+  border: 1px solid transparent;
+  margin: 7px;
+}
+
+.navbar {/svg
+  --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 480px) {
+  .apresentacao {
+      flex-direction: column;
+  }
+
+  .left img {
+    margin-bottom: 14px; 
+  }
+
+  .right {
+    text-align: center;
+  }
+
+  .containerSobreMim {
+    flex-direction: column;
+  }
+
+  .containerSobreMim .left {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .containerSobreMim .right {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .containerServicos {
+    flex-direction: column;
+  }
+
+  .containerServicos h2 {
+    font-size: 16px;
+  }
+
+  .itemServico1,
+  .itemServico2,
+  .itemServico3,
+  .itemServico4,
+  .itemServico5,
+  .itemServico6,
+  .itemServico7,
+  .itemServico8 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #servicos h3 {
+    font-size: 15px;
+  }
+
+  .displayContato {
+    flex-direction: column;
+  }
+
+font{
+  max-width: 100%;
+}
+
+  textarea,input {
+    width: 100%;
+  }
+
+  .dados{
+    width: 80%;
+  }
+
+  .mapa {
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 80%;
+
+  }
+
+  .mensagem{
+    width: 80%;
+    margin-left: 0px;
+  }
+
+  .mapa iframe{
+    width: 100%;
+    height: auto;
+  }
+ 
+}
+
+@media(min-width:481px) and (max-width:768px){
+  .apresentacao {
+    flex-direction: column;
+}
+
+.left img {
+  margin-bottom: 14px; 
+}
+
+.right {
+  text-align: center;
+}
+
+.containerSobreMim {
+  flex-direction: column;
+}
+
+.containerSobreMim .left {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerSobreMim .right {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerServicos {
+  flex-direction: column;
+}
+
+.containerServicos h2 {
+  font-size: 16px;
+}
+
+.itemServico1,
+.itemServico2,
+.itemServico3,
+.itemServico4,
+.itemServico5,
+.itemServico6,
+.itemServico7,
+.itemServico8 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#servicos h3 {
+  font-size: 15px;
+}
+
+.displayContato {
+  flex-direction: column;
+}
+
+font{
+max-width: 100%;
+}
+
+textarea,input {
+  width: 100%;
+}
+
+.dados{
+  width: 80%;
+}
+
+.mapa {
+  margin-left: 0px;
+  margin-top: 50px;
+  width: 80%;
+
+}
+
+.mensagem{
+  width: 80%;
+  margin-left: 0px;
+}
+
+.mapa iframe{
+  width: 100%;
+  height: auto;
+}
+
+}
